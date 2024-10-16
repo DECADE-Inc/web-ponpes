@@ -1,16 +1,22 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+
+const withMT = require("@material-tailwind/react/utils/withMT");
+export default withMT({
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'openSans': "'Open Sans'"
+      },
       colors: {
-        onPrimary : "#1C6758"
+        onPrimary : "#1A5319",
+        onSecondary : "#508D4E"
       }
     },
   },
   plugins: [],
-}
+});
 
