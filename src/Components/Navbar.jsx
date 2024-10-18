@@ -13,7 +13,7 @@ export default function Navbar() {
       <Link to={"/"} className="mr-auto flex items-center gap-4">
         <img src={logo} alt="logo-ponpes" width={70} />
         <h1 className="font-bold text-onPrimary">
-          PPSBK
+          Pesantren
         </h1>
       </Link>
       <div className="mr-4 flex gap-5 font-semibold">
